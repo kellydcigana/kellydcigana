@@ -1,3 +1,4 @@
+
 /* =========================================
    KELLY D'CIGANA
    Interações do site
@@ -8,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================
      1. DADOS DAS TIRAGENS
+     Todos os métodos do catálogo
   ========================================= */
 
   const services = [
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "Como está o caminho para um futuro amoroso?",
       description: "Uma tiragem para quem está solteira e deseja olhar para as possibilidades de relacionamento.",
       price: "27,77",
-      details: "Indicada para solteiros que desejam refletir sobre a vida amorosa e as possibilidades de compromisso."
+      details: "Indicada para quem deseja refletir sobre a vida amorosa e as possibilidades de compromisso."
     },
     {
       name: "Andamento de trabalho",
@@ -36,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "Como está o andamento do seu trabalho espiritual?",
       description: "Consulte as cartas sobre a situação e os movimentos relacionados ao trabalho realizado.",
       price: "47,77",
-      details: "Leitura para observar simbolicamente o andamento de um trabalho espiritual. A interpretação não garante resultados."
+      details: "Leitura para observar simbolicamente o andamento de um trabalho espiritual."
     },
     {
       name: "Templo do Amor Próprio",
@@ -63,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que as cartas mostram sobre seu momento atual?",
       description: "Uma leitura mais ampla para olhar diferentes aspectos da situação que você está vivendo.",
       price: "107,77",
-      details: "Atendimento mais abrangente. Entre em contato para confirmar o formato e os temas contemplados."
+      details: "Atendimento mais abrangente, com diferentes áreas da vida."
     },
     {
       name: "Orçamento de Trabalho",
@@ -81,16 +83,25 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que existe por trás dessa conexão intensa?",
       description: "Uma leitura sobre desejos, atração, conflitos e dinâmicas de uma relação.",
       price: "27,77",
-      details: "Atendimento voltado à reflexão sobre a dinâmica de uma conexão e os aspectos que a envolvem."
+      details: "Atendimento voltado à reflexão sobre a dinâmica de uma conexão."
     },
     {
-      name: "Vidas Passadas",
+      name: "Vidas Passadas Simples",
       category: "espiritualidade",
       label: "ESPIRITUALIDADE",
-      question: "Que padrões você sente que se repetem na sua vida?",
-      description: "Uma leitura simbólica para refletir sobre padrões, aprendizados e questões pessoais.",
-      price: "95,77",
-      details: "Interpretação espiritual e simbólica. As cartas não comprovam fatos históricos sobre vidas passadas."
+      question: "Quais padrões podem estar ligados à sua trajetória espiritual?",
+      description: "Uma leitura objetiva sobre possíveis aprendizados e padrões simbólicos.",
+      price: "50,77",
+      details: "Uma leitura com foco nos principais aspectos da sua trajetória espiritual."
+    },
+    {
+      name: "Vidas Passadas Completa",
+      category: "espiritualidade",
+      label: "ESPIRITUALIDADE",
+      question: "O que sua trajetória espiritual pode revelar?",
+      description: "Uma leitura mais aprofundada sobre experiências simbólicas, aprendizados e possíveis padrões.",
+      price: "77,77",
+      details: "Uma análise mais completa sobre os aspectos espirituais e os aprendizados que podem ser refletidos na vida atual."
     },
     {
       name: "Jogo amoroso individual",
@@ -102,20 +113,20 @@ document.addEventListener("DOMContentLoaded", () => {
       details: "Leitura individual com foco na questão amorosa apresentada durante o atendimento."
     },
     {
-      name: "Mesa real",
+      name: "Mesa Real",
       category: "previsoes",
       label: "36 CARTAS",
       question: "O que uma leitura ampla pode revelar sobre seu momento?",
       description: "Uma leitura com 36 cartas para observar diferentes áreas e situações da vida.",
-      price: "60,77",
-      details: "Consulta realizada com as 36 cartas do Baralho Cigano. Combine com a cartomante os detalhes da leitura."
+      price: "45,77",
+      details: "Consulta realizada com as 36 cartas do Baralho Cigano."
     },
     {
       name: "Fim de ciclo",
       category: "previsoes",
       label: "CICLOS E RENOVAÇÃO",
       question: "O que precisa ser encerrado e o que merece espaço?",
-      description: "Uma reflexão sobre encerramentos, aprendizados e novos começos no mês ou no fim do ano.",
+      description: "Uma reflexão sobre encerramentos, aprendizados e novos começos.",
       price: "57,77",
       details: "Tiragem voltada à reflexão sobre o ciclo que se encerra e as possibilidades para a próxima etapa."
     },
@@ -135,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que merece sua atenção na vida financeira?",
       description: "Uma leitura para refletir sobre escolhas, prioridades e caminhos profissionais ou financeiros.",
       price: "30,77",
-      details: "A tiragem oferece uma perspectiva simbólica e não substitui planejamento financeiro ou orientação profissional."
+      details: "A tiragem oferece uma perspectiva simbólica sobre sua vida financeira."
     },
     {
       name: "Templo de Afrodite",
@@ -144,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que as cartas mostram sobre essa conexão?",
       description: "Uma leitura voltada à atração, aos sentimentos e à dinâmica amorosa.",
       price: "27,77",
-      details: "Método de leitura amorosa. Entre em contato para saber os aspectos contemplados no atendimento."
+      details: "Método de leitura amorosa."
     },
     {
       name: "Meu amor",
@@ -162,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que parece estar dificultando seu caminho?",
       description: "Uma leitura espiritual para refletir sobre bloqueios percebidos e pontos que pedem atenção.",
       price: "30,77",
-      details: "Interpretação espiritual simbólica, sem afirmar que exista necessariamente um bloqueio ou demanda."
+      details: "Interpretação espiritual simbólica."
     },
     {
       name: "Confusão sentimental",
@@ -178,9 +189,9 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "amor",
       label: "AMOR",
       question: "Seu ex ainda pensa em você?",
-      description: "Veja o que a tiragem aponta sobre os sentimentos atuais, as intenções e a possibilidade de reaproximação.",
+      description: "Veja o que a tiragem aponta sobre sentimentos, intenções e possibilidades de reaproximação.",
       price: "50,77",
-      details: "Consulta sobre uma relação passada e a situação atual entre vocês. A leitura não garante reconciliação."
+      details: "Consulta sobre uma relação passada e a situação atual entre vocês."
     },
     {
       name: "Autoconhecimento",
@@ -198,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que pode ajudar você a mudar seus padrões?",
       description: "Reflita sobre hábitos, escolhas e atitudes que deseja transformar.",
       price: "40,77",
-      details: "Tiragem voltada à reflexão sobre hábitos e mudanças pessoais. Não substitui acompanhamento profissional quando necessário."
+      details: "Tiragem voltada à reflexão sobre hábitos e mudanças pessoais."
     },
     {
       name: "Amor simples",
@@ -225,16 +236,25 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "Qual área da sua vida você deseja compreender melhor?",
       description: "Escolha um tema específico para direcionar sua consulta.",
       price: "30,77",
-      details: "O atendimento é direcionado à área que você escolher. Informe o tema ao entrar em contato."
+      details: "O atendimento é direcionado à área que você escolher."
     },
     {
       name: "5 perguntas detalhadas",
       category: "previsoes",
       label: "CONSULTA DETALHADA",
       question: "Tem várias dúvidas e quer olhar cada uma com calma?",
-      description: "Cinco perguntas detalhadas, com conselhos e espaço para dúvidas relacionadas à consulta.",
+      description: "Cinco perguntas detalhadas, com conselhos e espaço para dúvidas relacionadas.",
       price: "66,00",
-      details: "Pacote com cinco perguntas detalhadas, conselhos e esclarecimento de dúvidas relacionadas, conforme combinado no atendimento."
+      details: "Pacote com cinco perguntas detalhadas."
+    },
+    {
+      name: "Perguntas avulsas",
+      category: "previsoes",
+      label: "PERGUNTAS",
+      question: "Tem uma dúvida específica?",
+      description: "Faça perguntas individuais sobre os assuntos que deseja consultar. Descontos disponíveis para mais de uma pergunta.",
+      price: "A partir de 7,77",
+      details: "O valor começa em R$ 7,77 por pergunta. Para mais de uma pergunta, consulte os valores promocionais."
     },
     {
       name: "Tiragem Anual",
@@ -243,7 +263,16 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "Quais temas merecem sua atenção ao longo do ano?",
       description: "Uma leitura para refletir sobre tendências, possibilidades e prioridades para o novo ciclo.",
       price: "70,77",
-      details: "Consulta de perspectiva anual. As cartas não determinam acontecimentos inevitáveis."
+      details: "Consulta de perspectiva anual."
+    },
+    {
+      name: "Arcano Anual",
+      category: "previsoes",
+      label: "ARCANO ANUAL",
+      question: "Qual energia simbólica acompanha seu novo ciclo?",
+      description: "Descubra seu arcano regente e reflita sobre os temas do seu ano.",
+      price: "40,77",
+      details: "Uma leitura baseada no arcano anual e em seus significados simbólicos."
     },
     {
       name: "Tiragem Espiritual",
@@ -252,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "O que merece atenção na sua caminhada espiritual?",
       description: "Um espaço para refletir sobre dúvidas e questões relacionadas à sua espiritualidade.",
       price: "60,00",
-      details: "Leitura espiritual conforme a questão apresentada pela consulente."
+      details: "Leitura espiritual conforme a questão apresentada."
     },
     {
       name: "Caminhos da Prosperidade",
@@ -261,12 +290,106 @@ document.addEventListener("DOMContentLoaded", () => {
       question: "Que escolhas podem favorecer seus próximos passos?",
       description: "Uma leitura sobre oportunidades, prioridades e caminhos ligados à prosperidade.",
       price: "40,77",
-      details: "Tiragem para reflexão sobre escolhas e possibilidades materiais. Não garante ganhos financeiros."
+      details: "Tiragem para reflexão sobre escolhas e possibilidades materiais."
     }
   ];
 
   /* =========================================
-     2. ELEMENTOS DOS ATENDIMENTOS
+     2. PERGUNTAS PERSONALIZADAS POR MÉTODO
+  ========================================= */
+
+  function getMethodQuestions(service) {
+    const name = service.name.toLowerCase();
+
+    if (name.includes("ficante")) {
+      return [
+        "O que essa pessoa sente por mim?",
+        "Quais são as intenções dela comigo?",
+        "Como essa conexão pode se desenvolver?"
+      ];
+    }
+
+    if (name.includes("casamento")) {
+      return [
+        "Como está meu caminho amoroso?",
+        "Existe possibilidade de um relacionamento sério?",
+        "O que preciso observar na minha vida afetiva?"
+      ];
+    }
+
+    if (name.includes("vidas passadas")) {
+      return [
+        "Quais aspectos da minha trajetória espiritual serão analisados?",
+        "Existem padrões simbólicos que merecem minha atenção?",
+        "Quais aprendizados posso trazer para minha vida atual?"
+      ];
+    }
+
+    if (name.includes("mesa real")) {
+      return [
+        "Quais áreas da minha vida desejo observar?",
+        "Existe algum assunto que merece atenção especial?",
+        "Qual período ou situação quero compreender melhor?"
+      ];
+    }
+
+    if (name.includes("arcano anual")) {
+      return [
+        "Qual é o meu arcano anual?",
+        "Quais aprendizados ele representa?",
+        "Como posso trabalhar essa energia durante o ano?"
+      ];
+    }
+
+    if (name.includes("anual")) {
+      return [
+        "Quais áreas da minha vida desejo analisar?",
+        "Quero dar atenção especial a algum mês?",
+        "Existe alguma questão importante para este novo ciclo?"
+      ];
+    }
+
+    if (name.includes("financeiro") || name.includes("prosperidade")) {
+      return [
+        "Como está minha vida financeira?",
+        "Quais oportunidades merecem minha atenção?",
+        "O que posso observar sobre minha vida profissional?"
+      ];
+    }
+
+    if (name.includes("espiritual") || name.includes("energético") || name.includes("trabalho")) {
+      return [
+        "Qual é minha principal dúvida espiritual?",
+        "Existe alguma situação específica que desejo compreender?",
+        "O que gostaria de observar na minha caminhada espiritual?"
+      ];
+    }
+
+    if (name.includes("autoconhecimento") || name.includes("hábitos") || name.includes("amor próprio")) {
+      return [
+        "O que desejo compreender sobre mim?",
+        "Existe algum comportamento que quero transformar?",
+        "Qual aspecto pessoal merece mais atenção?"
+      ];
+    }
+
+    if (service.category === "amor") {
+      return [
+        "Qual é a situação atual entre nós?",
+        "O que desejo saber sobre os sentimentos dessa pessoa?",
+        "Existe alguma dúvida específica sobre essa relação?"
+      ];
+    }
+
+    return [
+      "Qual é a situação que desejo consultar?",
+      "O que mais gostaria de compreender?",
+      "Existe algum detalhe importante sobre essa questão?"
+    ];
+  }
+
+  /* =========================================
+     3. ELEMENTOS DOS ATENDIMENTOS
   ========================================= */
 
   const serviceList = document.getElementById("serviceList");
@@ -276,9 +399,243 @@ document.addEventListener("DOMContentLoaded", () => {
   let activeFilter = "todos";
   let searchTerm = "";
 
-  function formatWhatsAppMessage(serviceName) {
-    return `Olá, Kelly D'Cigana! Tenho interesse na tiragem "${serviceName}". Gostaria de saber mais sobre o atendimento.`;
+  /* =========================================
+     4. CRIAÇÃO DO FORMULÁRIO
+  ========================================= */
+
+  const modal = document.createElement("div");
+  modal.className = "consultation-modal";
+  modal.id = "consultationModal";
+
+  modal.innerHTML = `
+    <div class="consultation-overlay"></div>
+
+    <div class="consultation-content" role="dialog" aria-modal="true" aria-labelledby="consultationTitle">
+
+      <button class="consultation-close" type="button" aria-label="Fechar formulário">
+        &times;
+      </button>
+
+      <p class="consultation-eyebrow">KELLY D'CIGANA</p>
+
+      <h2 id="consultationTitle">Vamos iniciar sua consulta</h2>
+
+      <p class="consultation-intro">
+        Preencha as informações abaixo para que eu possa compreender melhor sua consulta.
+      </p>
+
+      <div class="selected-method">
+        <span>MÉTODO ESCOLHIDO</span>
+        <strong id="selectedMethodName"></strong>
+        <b id="selectedMethodPrice"></b>
+      </div>
+
+      <div class="method-questions">
+        <h3>Este método pode abordar:</h3>
+        <ul id="methodQuestionList"></ul>
+      </div>
+
+      <form id="consultationForm">
+
+        <h3 class="form-section-title">Seus dados</h3>
+
+        <label for="clientName">Nome completo *</label>
+        <input
+          id="clientName"
+          name="clientName"
+          type="text"
+          placeholder="Seu nome completo"
+          autocomplete="name"
+          required
+        >
+
+        <label for="clientBirth">Data de nascimento *</label>
+        <input
+          id="clientBirth"
+          name="clientBirth"
+          type="date"
+          required
+        >
+
+        <h3 class="form-section-title">Dados da outra pessoa</h3>
+
+        <p class="form-help">
+          Preencha somente o que souber. Essas informações são opcionais.
+          Você pode informar apenas o nome, a data de nascimento ou ambos.
+        </p>
+
+        <label for="otherName">Nome da outra pessoa</label>
+        <input
+          id="otherName"
+          name="otherName"
+          type="text"
+          placeholder="Nome da pessoa">
+
+        <label for="otherBirth">Data de nascimento da outra pessoa</label>
+        <input
+          id="otherBirth"
+          name="otherBirth"
+          type="date">
+
+        <label for="otherPhoto">Foto da outra pessoa (opcional)</label>
+        <input
+          id="otherPhoto"
+          name="otherPhoto"
+          type="file"
+          accept="image/*"
+        >
+
+        <p class="form-help">
+          Caso envie uma foto, ela será anexada manualmente à conversa do WhatsApp.
+        </p>
+
+        <h3 class="form-section-title">Sobre sua consulta</h3>
+
+        <label for="clientQuestion">Sua pergunta ou situação</label>
+        <textarea
+          id="clientQuestion"
+          name="clientQuestion"
+          rows="4"
+          placeholder="Conte brevemente o que deseja saber..."></textarea>
+
+        <label for="extraInfo">Informações adicionais</label>
+        <textarea
+          id="extraInfo"
+          name="extraInfo"
+          rows="3"
+          placeholder="Se houver algum detalhe importante, escreva aqui..."></textarea>
+
+        <button class="consultation-submit" type="submit">
+          Enviar pelo WhatsApp ↗
+        </button>
+
+        <p class="form-privacy">
+          Seus dados serão utilizados para organizar o atendimento.
+        </p>
+
+      </form>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  const modalClose = modal.querySelector(".consultation-close");
+  const modalOverlay = modal.querySelector(".consultation-overlay");
+  const consultationForm = document.getElementById("consultationForm");
+
+  let selectedService = null;
+
+  function openConsultation(service) {
+    selectedService = service;
+
+    document.getElementById("selectedMethodName").textContent = service.name;
+
+    document.getElementById("selectedMethodPrice").textContent =
+      service.price.toLowerCase().includes("partir")
+        ? `R$ ${service.price}`
+        : `R$ ${service.price}`;
+
+    const questionList = document.getElementById("methodQuestionList");
+    questionList.replaceChildren();
+
+    getMethodQuestions(service).forEach((question) => {
+      const item = document.createElement("li");
+      item.textContent = question;
+      questionList.appendChild(item);
+    });
+
+    consultationForm.reset();
+
+    modal.classList.add("active");
+    document.body.classList.add("modal-open");
+
+    modal.querySelector("#clientName").focus();
   }
+
+  function closeConsultation() {
+    modal.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  }
+
+  modalClose.addEventListener("click", closeConsultation);
+  modalOverlay.addEventListener("click", closeConsultation);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeConsultation();
+    }
+  });
+
+  /* =========================================
+     5. ENVIO PARA O WHATSAPP
+  ========================================= */
+
+  consultationForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!selectedService) return;
+
+    const clientName = document.getElementById("clientName").value.trim();
+    const clientBirth = document.getElementById("clientBirth").value;
+    const otherName = document.getElementById("otherName").value.trim();
+    const otherBirth = document.getElementById("otherBirth").value;
+    const otherPhoto = document.getElementById("otherPhoto").files[0];
+    const clientQuestion = document.getElementById("clientQuestion").value.trim();
+    const extraInfo = document.getElementById("extraInfo").value.trim();
+
+    if (!clientName || !clientBirth) {
+      alert("Preencha seu nome completo e sua data de nascimento.");
+      return;
+    }
+
+    function formatDate(date) {
+      if (!date) return "Não informado";
+
+      const [year, month, day] = date.split("-");
+      return `${day}/${month}/${year}`;
+    }
+
+    let message = `
+Olá, Kelly D'Cigana! ✨
+
+Tenho interesse no seguinte atendimento:
+
+🔮 MÉTODO: ${selectedService.name}
+💰 VALOR: ${selectedService.price}
+
+DADOS DA CONSULENTE
+Nome: ${clientName}
+Nascimento: ${formatDate(clientBirth)}
+
+DADOS DA OUTRA PESSOA
+Nome: ${otherName || "Não informado"}
+Nascimento: ${formatDate(otherBirth)}
+
+MINHA PERGUNTA / SITUAÇÃO
+${clientQuestion || "Ainda não informada."}
+
+INFORMAÇÕES ADICIONAIS
+${extraInfo || "Nenhuma informação adicional."}
+
+Gostaria de dar continuidade ao atendimento.
+    `.trim();
+
+    const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank", "noopener,noreferrer");
+
+    if (otherPhoto) {
+      alert(
+        "Sua mensagem foi preparada! Como o WhatsApp não permite anexar uma foto automaticamente pelo site, envie a foto manualmente na conversa que acabou de abrir."
+      );
+    }
+
+    closeConsultation();
+  });
+
+  /* =========================================
+     6. CRIAÇÃO DOS CARDS
+  ========================================= */
 
   function createServiceCard(service) {
     const card = document.createElement("article");
@@ -302,13 +659,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const price = document.createElement("p");
     price.className = "service-price";
-    price.textContent = `R$ ${service.price}`;
+
+    price.textContent = service.price.toLowerCase().includes("partir")
+      ? `R$ ${service.price}`
+      : `R$ ${service.price}`;
 
     const details = document.createElement("details");
     details.className = "service-details";
 
     const summary = document.createElement("summary");
-    summary.textContent = "Quero saber mais sobre esta tiragem";
+    summary.textContent = "Conheça este método";
 
     const detailText = document.createElement("p");
     detailText.textContent = service.details;
@@ -320,7 +680,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.type = "button";
 
     const buttonText = document.createElement("span");
-    buttonText.textContent = "Quero essa tiragem";
+    buttonText.textContent = "Quero esse método";
 
     const arrow = document.createElement("span");
     arrow.setAttribute("aria-hidden", "true");
@@ -329,10 +689,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.append(buttonText, arrow);
 
     button.addEventListener("click", () => {
-      const message = formatWhatsAppMessage(service.name);
-      const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
-
-      window.open(url, "_blank", "noopener,noreferrer");
+      openConsultation(service);
     });
 
     card.append(
@@ -347,6 +704,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return card;
   }
+
+  /* =========================================
+     7. BUSCA E FILTROS
+  ========================================= */
 
   function renderServices() {
     if (!serviceList) return;
@@ -375,7 +736,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (filteredServices.length === 0) {
       const message = document.createElement("p");
       message.className = "no-results";
-      message.textContent = "Nenhuma tiragem encontrada. Tente outro termo ou categoria.";
+      message.textContent =
+        "Nenhum método encontrado. Tente outro termo ou categoria.";
+
       serviceList.appendChild(message);
       return;
     }
@@ -395,6 +758,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       filterButtons.forEach((item) => {
         const isActive = item === button;
+
         item.classList.toggle("active", isActive);
         item.setAttribute("aria-pressed", String(isActive));
       });
@@ -413,7 +777,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderServices();
 
   /* =========================================
-     3. MENU PARA CELULAR
+     8. MENU PARA CELULAR
   ========================================= */
 
   const menuToggle = document.getElementById("menuToggle");
@@ -440,19 +804,10 @@ document.addEventListener("DOMContentLoaded", () => {
         menuToggle.textContent = "☰";
       });
     });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        mainNav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Abrir menu");
-        menuToggle.textContent = "☰";
-      }
-    });
   }
 
   /* =========================================
-     4. ESTRELAS DISCRETAS NO CURSOR
+     9. ESTRELAS DISCRETAS NO CURSOR
   ========================================= */
 
   const starLayer = document.getElementById("star-layer");
@@ -495,14 +850,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================
-     5. CARTAS DE OBJETIVOS
+     10. CARTAS / ORÁCULOS
   ========================================= */
 
   const deckRows = document.querySelectorAll(".deck-row");
 
   deckRows.forEach((row) => {
     row.addEventListener("click", () => {
-      const deckName = row.dataset.deck || row.querySelector(".deck-name")?.textContent || "oráculo";
+      const deckName =
+        row.dataset.deck ||
+        row.querySelector(".deck-name")?.textContent ||
+        "oráculo";
 
       const message =
         `Olá, Kelly D'Cigana! Tenho interesse em uma consulta com ${deckName}. Gostaria de saber mais sobre as opções disponíveis.`;
@@ -515,7 +873,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================
-     6. LINKS INTERNOS SUAVES
+     11. LINKS INTERNOS SUAVES
   ========================================= */
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
@@ -544,7 +902,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================
-     7. ANO AUTOMÁTICO NO RODAPÉ
+     12. ANO AUTOMÁTICO NO RODAPÉ
   ========================================= */
 
   const footerYear = document.querySelector("[data-year]");
